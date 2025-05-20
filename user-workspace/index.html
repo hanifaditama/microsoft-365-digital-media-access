@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceX Clone</title>
+  <!-- Google Fonts: Space Grotesk (modern, geometric sans-serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom font family for SpaceX style */
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    /* Custom SpaceX logo style using text */
+    .spacex-logo {
+      font-weight: 700;
+      font-size: 8rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-style: normal;
+      font-family: 'Space Grotesk', sans-serif;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      gap: 0.05em;
+    }
+    /* Adjust letter spacing for the "S", "P", "A", "C", "E" to mimic SpaceX logo */
+    .spacex-logo span.s {
+      margin-right: -0.1em;
+    }
+    .spacex-logo span.p {
+      margin-left: -0.3em;
+      margin-right: -0.05em;
+    }
+    .spacex-logo span.a {
+      letter-spacing: -0.15em;
+      margin-right: -0.05em;
+    }
+    .spacex-logo span.c {
+      margin-left: -0.05em;
+      margin-right: -0.05em;
+    }
+    .spacex-logo span.e {
+      letter-spacing: -0.25em;
+      margin-left: -0.05em;
+    }
+  </style>
+</head>
+<body class="bg-white text-black min-h-screen flex flex-col justify-between">
+
+  <header class="flex justify-center mt-12">
+    <h1 class="spacex-logo select-none">
+      <span class="s">S</span><span class="p">P</span><span class="a">A</span><span class="c">C</span><span class="e">E</span><span>X</span>
+    </h1>
+  </header>
+
+  <nav class="flex justify-center mt-16">
+    <ul class="space-y-4 text-lg text-center">
+      <li><a href="/vehicles/falcon-9/" class="hover:underline">Falcon 9</a></li>
+      <li><a href="/vehicles/falcon-heavy/" class="hover:underline">Falcon Heavy</a></li>
+      <li><a href="/vehicles/dragon/" class="hover:underline">Dragon</a></li>
+      <li><a href="/vehicles/starship/" class="hover:underline">Starship</a></li>
+      <li><a href="/humanspaceflight/" class="hover:underline">Human Spaceflight</a></li>
+      <li><a href="/rideshare/" class="hover:underline">Rideshare</a></li>
+      <li><a href="/starshield/" class="hover:underline">Starshield</a></li>
+      <li><a href="https://www.starlink.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Starlink</a></li>
+      <li><a href="https://shop.spacex.com/" target="_blank" rel="noopener noreferrer" class="hover:underline">Shop</a></li>
+      <li><a href="/mission/" class="hover:underline">Mission</a></li>
+      <li><a href="/launches/" class="hover:underline">Launches</a></li>
+      <li><a href="/careers/" class="hover:underline">Careers</a></li>
+      <li><a href="/updates/" class="hover:underline">Updates</a></li>
+    </ul>
+  </nav>
+
+  <footer class="flex justify-center mt-20 mb-8 space-x-6 text-sm uppercase font-semibold tracking-wider">
+    <span>SpaceX © 2025</span>
+    <a href="/media/privacy_policy_spacex.pdf" class="hover:underline">Privacy Policy</a>
+    <a href="/supplier/" class="hover:underline">Suppliers</a>
+  </footer>
+
+</body>
+</html>
